@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <form action="" class="form" id="form">
+      <label>
+        <input type="text" name="nome" placeholder="Nome">
+      </label>
+
+      <label for="numero-cartao">
+        <input type="text" name="numero" pattern="[0-9]{16}" required id="numCartao" placeholder="**** **** **** ****">
+      </label>
+      <label>
+        <input type="text" name="data" placeholder="**/****">
+      </label>
+
+      <label>
+        <input type="text" name="cvc" id="cvc" placeholder="***">
+      </label>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <div class="resultado"></div>
+  </main>
+  <footer></footer>
+
+  <script src="index.js" type="module"></script>
+  <script src="validator.js"></script>
+
+
+</body>
+
 </html>
