@@ -8,34 +8,36 @@
 </head>
 
 <body>
-  <header></header>
+  <header>
+    
+    <h1>The Bank</h1>
+  </header>
   <main>
     <form action="" class="form" id="form">
-      <label>
-        <input type="text" name="nome" placeholder="Nome">
-      </label>
 
-      <label for="numero-cartao">
-        <input type="text" name="numero" pattern="[0-9]{16}" required id="numCartao" placeholder="**** **** **** ****">
+      <label for="numCartao">
+        Número do Cartão:
+        <input type="text" name="numero" id="numCartao" pattern="[0-9]{13,19}" placeholder="**** ******** ****" required>
       </label>
       <label>
-        <input type="text" name="data" placeholder="**/****">
+        Data valid:
+        <input type="text" name="data" id="data" placeholder="**/****" required>
       </label>
 
-      <label>
-        <input type="text" name="cvc" id="cvc" placeholder="***">
+      <label for="cvc">
+        CVC
+        <input type="text" name="cvc" id="cvc" pattern="[0-9]{3,4}" placeholder="***" required>
       </label>
 
-      <button type="submit">Enviar</button>
+      <button type="submit">Verificar</button>
     </form>
     <div class="resultado"></div>
+
+    <!-- <p id="numeroOculto"></p> -->
   </main>
   <footer></footer>
 
   <script src="index.js" type="module"></script>
-  <script src="validator.js"></script>
-
-
 </body>
 
 </html>
