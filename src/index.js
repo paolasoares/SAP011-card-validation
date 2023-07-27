@@ -17,9 +17,13 @@ form.addEventListener('submit', function (e) {
         Data: ${data}
         Cvc: ${cvc}
         `;
-        
-        result.innerText = msg + `Válido`
+    
+        result.innerText = msg + `Válido`;
     } else {
         result.innerText = `Inválido`;
     }
 });
+// Inserir o número que desejamos validar. Use apenas caracteres numéricos (dígitos) no cartão para validar [0-9]. - ok
+// Constatar se o resultado é válido ou não. - ok
+// Ocultar todos os dígitos do número do cartão, excetuando os últimos 4 caracteres. -ok 
+// Não deve poder inserir um campo vazio. - ok

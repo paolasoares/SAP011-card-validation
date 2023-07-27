@@ -9,31 +9,29 @@
 
 <body>
   <header>
-    
+
     <h1>The Bank</h1>
+    <h2>Adicionar um Cartão</h2>
   </header>
   <main>
-    <form action="" class="form" id="form">
+    <section class="container">
+      <form action="" class="form" id="form">
+        <div class="input-numero">
+          <input type="text" name="numero" class="numero" id="numCartao" pattern="[0-9]{13,19}" placeholder="Número do Cartão "
+            required>
+        </div>
+        <div class="input-data">
+          <input type="text" name="data" class="data" id="data" placeholder="Data Válidade" required>
+        </div>
+        <div class="input-cvc">
+            <input type="text" name="cvc" id="cvc" pattern="[0-9]{3,4}" placeholder="Código de Segurança" required>
+        </div>
+          <button type="submit" class="button">Adicionar Cartão</button>
+      </form>
 
-      <label for="numCartao">
-        Número do Cartão:
-        <input type="text" name="numero" id="numCartao" pattern="[0-9]{13,19}" placeholder="**** ******** ****" required>
-      </label>
-      <label>
-        Data valid:
-        <input type="text" name="data" id="data" placeholder="**/****" required>
-      </label>
-
-      <label for="cvc">
-        CVC
-        <input type="text" name="cvc" id="cvc" pattern="[0-9]{3,4}" placeholder="***" required>
-      </label>
-
-      <button type="submit">Verificar</button>
-    </form>
-    <div class="resultado"></div>
-
-    <!-- <p id="numeroOculto"></p> -->
+      <div class="resultado"></div>
+      <!-- <p id="numeroOculto"></p> -->
+    </section>
   </main>
   <footer></footer>
 

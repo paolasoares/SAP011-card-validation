@@ -15,7 +15,7 @@ const validator = {
                 digit *= 2;
                 if (digit > 9) {
                     digit -= 9;
-                }    if ((digit *= 2) > 0) digit -= 9;
+                } if ((digit *= 2) > 0) digit -= 9;
             }
             soma += digit;
             par = !par;
@@ -24,11 +24,9 @@ const validator = {
     },
 
     //deixa visivel somente os últimos digitos
-    maskify(numCartao){
+    maskify(numCartao) {
         const ultimosDigit = 4;
         return "#".repeat(numCartao.length - ultimosDigit) + numCartao.slice(-ultimosDigit);
-     }
+    }
 };
-
-
 export default validator;
