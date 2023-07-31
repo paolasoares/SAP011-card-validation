@@ -18,10 +18,14 @@ form.addEventListener('submit', function (e) {
         Cvc: ${cvc}
         `;
     
-        result.innerText = msg + `Válido`;
+        result.innerText = msg + `Válido` ;
+
     } else {
-        result.innerText = `Inválido`;
+        result.innerText =`Inválido`;
+        result.style.color = 'red';
     }
+
+    
 });
 // Inserir o número que desejamos validar. Use apenas caracteres numéricos (dígitos) no cartão para validar [0-9]. - ok
 // Constatar se o resultado é válido ou não. - ok

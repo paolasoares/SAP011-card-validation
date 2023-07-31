@@ -5,28 +5,26 @@
   <meta charset="utf-8">
   <title>Tarjeta de crédito válida</title>
   <link rel="stylesheet" href="style.css" />
+  
 </head>
 
 <body>
-  <header>
-
-    <h1>The Bank</h1>
-    <h2>Adicionar um Cartão</h2>
-  </header>
   <main>
     <section class="container">
+      <img src="img/PayPal-Logo.png" alt="">
+      <h2>Adicionar um Cartão</h2>
       <form action="" class="form" id="form">
         <div class="input-numero">
-          <input type="text" name="numero" class="numero" id="numCartao" pattern="[0-9]{13,19}" placeholder="Número do Cartão "
-            required>
-        </div>
-        <div class="input-data">
-          <input type="text" name="data" class="data" id="data" placeholder="Data Válidade" required>
-        </div>
-        <div class="input-cvc">
+          <input type="text" name="numero" class="numero" id="numCartao" pattern="[0-9]{13,19}"
+            placeholder="Número do Cartão " required>
+          </div>
+          <div class="input-data">
+            <input type="text" name="data" class="data" id="data" placeholder="Data Válidade" required>
+          </div>
+          <div class="input-cvc">
             <input type="text" name="cvc" id="cvc" pattern="[0-9]{3,4}" placeholder="Código de Segurança" required>
         </div>
-          <button type="submit" class="button">Adicionar Cartão</button>
+        <button type="submit" class="button">Adicionar Cartão</button>
       </form>
 
       <div class="resultado"></div>
