@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Tarjeta de crédito válida</title>
+  <title>Válida Cartão de crédito</title>
   <link rel="stylesheet" href="style.css" />
-  
+
 </head>
 
 <body>
@@ -17,21 +17,23 @@
         <div class="input-numero">
           <input type="text" name="numero" class="numero" id="numCartao" pattern="[0-9]{13,19}"
             placeholder="Número do Cartão " required>
-          </div>
-          <div class="input-data">
-            <input type="text" name="data" class="data" id="data" placeholder="Data Válidade" required>
-          </div>
-          <div class="input-cvc">
-            <input type="text" name="cvc" id="cvc" pattern="[0-9]{3,4}" placeholder="Código de Segurança" required>
+        </div>
+        <div class="input-data">
+          <input type="text" name="data" class="data" id="data" placeholder="Data Válidade" required>
+        </div>
+        <div class="input-cvc">
+          <input type="text" name="cvc" id="cvc" pattern="[0-9]{3,4}" placeholder="Código de Segurança" required>
         </div>
         <button type="submit" class="button">Adicionar Cartão</button>
+        <button type="reset" class="limpar">Limpar</button>
       </form>
-
       <div class="resultado"></div>
       <!-- <p id="numeroOculto"></p> -->
     </section>
   </main>
-  <footer></footer>
+  <footer>
+    <p class="copy">&copy; 2023 / Paola-Laboratoria</p>
+  </footer>
 
   <script src="index.js" type="module"></script>
 </body>

@@ -27,6 +27,7 @@ const validator = {
     maskify(numCartao) {
         const ultimosDigit = 4;
         return "#".repeat(numCartao.length - ultimosDigit) + numCartao.slice(-ultimosDigit);
-    }
+    },
+   
 };
 export default validator;
