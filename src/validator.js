@@ -10,14 +10,18 @@ const validator = {
         let soma = 0;
         let par = false;
         for (let i = numCartao.length - 1; i >= 0; i--) {
-            let digit = parseInt(numCartao.charAt(i), 10);
+            const digit = parseInt(numCartao.charAt(i), 10);
+            //dobra o valor do digito se ele estiver em uma posição par.
             if (par) {
-                digit *= 2;
-                if (digit > 9) {
-                    digit -= 9;
-                } if ((digit *= 2) > 0) digit -= 9;
+                let dobro = digit * 2;
+                //Se o result for maior ou igual a 10, sibtrei por 9;
+                if (dobro >= 10) {
+                    dobro -= 9;
+                }
+                soma += dobro;
+            } else {
+                soma += digit;
             }
-            soma += digit;
             par = !par;
         }
         return soma % 10 === 0;
@@ -28,6 +32,6 @@ const validator = {
         const ultimosDigit = 4;
         return "#".repeat(numCartao.length - ultimosDigit) + numCartao.slice(-ultimosDigit);
     },
-   
+
 };
 export default validator;

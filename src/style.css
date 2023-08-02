@@ -54,14 +54,6 @@ input {
     font-family: var(--font-family);
 }
 
-.button {
-    margin: 20px;
-    padding: 15px 100px;
-    border-radius: 15px;
-    font-family: var(--font-family);
-
-    background-color: var(--cor-butoon);
-}
 
 .limpar {
     display: block;
@@ -71,6 +63,13 @@ input {
     outline: none;
     background-color: var(--cores-secundarias);
     color: #9d9d9d;
+}
+.button {
+    margin: 20px;
+    padding: 15px 100px;
+    border-radius: 15px;
+    font-family: var(--font-family);
+    background-color: var(--cor-butoon);
 }
 
 button:hover {
@@ -88,8 +87,12 @@ form button:hover {
 
 .resultado {
     text-align: initial;
-    margin: 0 30%;
+    margin: 0 28%;
 
+}
+.cartao-dicionado{
+    background-color: var(--cor-butoon);
+    color: black;
 }
 
 .copy {
